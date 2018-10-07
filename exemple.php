@@ -5,7 +5,7 @@
   echo "<h3>Méthode showGlyph</h3>";
   // Affichage d'une Glyphe FontAwsome
   echo "Affichage d'une icône : ".                        XToolbox::showGlyph('archway')."<br/>";
-  echo "Affichage d'une icône avec couleur : ".           XToolbox::showGlyph('archway', 'blue')."<br/>";
+  echo "Affichage d'une icône avec couleur : ".           XToolbox::showGlyph('archway', 'fas', 'blue')."<br/>";
 
   echo "<h3>Méthode showAlert</h3>";
   // Affichage d'un Label Bootstrap

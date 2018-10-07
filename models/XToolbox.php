@@ -55,20 +55,29 @@ class XToolbox
 
   // Affiche une icône FontAwsome en fonction de son nom
   // ATTENTION : Il faut faire un echo pour l'affichage !
-	public static function showGlyph($glyphName, $color = '', $params = '') {
+	public static function showGlyph($glyphName, $type = 'fas', $color = '', $params = '') {
+
+		// Récupération du type par défaut
+		if ($type == null) {	$type = 'fas';	}
+
+		// Préparation de la variable à retourner
+		$glyphMessage = "";
+
 		if (empty($color)) {
 			if (!empty($params)) {
-				return '<i class="fas fa-'.$glyphName.'" style=\''.$params.'\'></i>';
+				$glyphMessage = '<i class="'.$type.' fa-'.$glyphName.'" style=\''.$params.'\'></i>';
 			} else {
-				return '<i class="fas fa-'.$glyphName.'"></i>';
+				$glyphMessage = '<i class="'.$type.' fa-'.$glyphName.'"></i>';
 			}
 		} else {
 			if (!empty($params)) {
-				return '<i class="fas fa-'.$glyphName.'" style=\'color:'.$color.';'.$params.'\'></i>';
+				$glyphMessage = '<i class="'.$type.' fa-'.$glyphName.'" style=\'color:'.$color.';'.$params.'\'></i>';
 			} else {
-				return '<i class="fas fa-'.$glyphName.'" style=\'color:'.$color.'\'></i>';
+				$glyphMessage = '<i class="'.$type.' fa-'.$glyphName.'" style=\'color:'.$color.'\'></i>';
 			}
 		}
+
+		return $glyphMessage;
 	}
 
   // Affiche une chaine de caractères dans une alerte Bootstrap
