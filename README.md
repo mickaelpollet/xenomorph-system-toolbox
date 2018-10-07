@@ -4,6 +4,9 @@
 
 # Versionning
 
+v1.1.0
+- Ajout des fichiers initiaux.
+
 v1.0.0
 - 'Commit' initial.
 

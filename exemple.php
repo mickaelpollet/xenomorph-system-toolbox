@@ -1,0 +1,5 @@
+<?php
+
+    showGlyph('hazard');
+
+?>
