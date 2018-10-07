@@ -55,7 +55,6 @@ try {
 
       <?php
         // Appel du code
-        echo "<h2>Description des méthodes de 'XToolbox' :</h2>";
         require_once(__DIR__ . '/exemple.php');
       ?>
 

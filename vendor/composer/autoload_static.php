@@ -6,9 +6,14 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit1134e2d2371f97d95fb539703d8b297c
 {
+    public static $classMap = array (
+        'XToolbox' => __DIR__ . '/../..' . '/models/XToolbox.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->classMap = ComposerStaticInit1134e2d2371f97d95fb539703d8b297c::$classMap;
 
         }, null, ClassLoader::class);
     }
