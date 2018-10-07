@@ -1,0 +1,23 @@
+{
+    "name": "xenomorph/xenomorph-system-toolbox",
+    "description": "Xenomorph's Framework and Libraries Toolbox",
+    "keywords": ["php freamwork", "framework", "xenomorph", "toolbox"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mickaël POLLET",
+            "email": "mickaelpollet@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php":">=5.5.0",
+    },
+    "autoload": {
+      "classmap": [
+        "models/"
+      ]
+    },
+    "version": "1.0.0"
+}
