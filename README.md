@@ -6,6 +6,7 @@
 
 v1.2.1
 - Correction de la méthode 'showGlyph' qui ne prenait pas en compte les types FontAwsome.
+- Mise à jour de la vue gérant les erreurs
 
 v1.2.0
 - Ajout de la classe 'XToolbox' qui gère les méthodes des outils de Xenomorph de manière statique.
